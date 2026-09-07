@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "id": "mv-wam",
+    "title": "MV-WAM: Manifold-Aware World Action Model with Value Augmentation",
+    "subtitle": "用不同预测目标连接视觉未来、机器人动作与任务进度",
+    "summary": "MV-WAM通过双专家与模态方向mask联合生成视觉未来、动作和进度价值；视频预测速度，动作回归干净端点。报告梳理RoboTwin与真机证据，并指出随机视觉预训练、采样公式歧义和物理回滚的复现边界。",
+    "authors": "Jintao Chen, Peidong Jia, Qingpo Wuwu, Jiaming Liu, Mengfei Du, Chun-Kai Fan, Xiaowei Chi, Hao Chen, Chengyu Bai, Zezhong Qian, Hao Wang, Jiajun Cao, Weishi Mi, Xiaozhu Ju, Jian Tang, Shanghang Zhang",
+    "category": "WAM",
+    "tags": [
+      "Mixture-of-Transformers",
+      "端点回归",
+      "视觉泛化",
+      "进度价值"
+    ],
+    "published": "2026-06-19",
+    "added": "2026-09-07",
+    "readingMinutes": 30,
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.21088",
+    "htmlPath": "papers/mv-wam.html",
+    "demo": false,
+    "featured": false
+  }
+]
