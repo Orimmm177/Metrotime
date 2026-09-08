@@ -20,5 +20,27 @@
     "htmlPath": "papers/mv-wam.html",
     "demo": false,
     "featured": false
+  },
+  {
+    "id": "memorywam",
+    "title": "MemoryWAM: Efficient World Action Modeling with Persistent Memory",
+    "subtitle": "把长历史压成逐帧摘要，让世界动作模型记得更久、执行更快",
+    "summary": "MemoryWAM以近期完整帧、初始锚点和逐帧gist维护持久记忆；训练联合学习视频与动作，推理只更新视觉缓存并去噪动作。报告分析83.0%的RMBench结果、记忆消融与单层效率证据，说明线性缓存增长及官方代码尚未发布的边界。",
+    "authors": "Sizhe Yang, Juncheng Mu, Tianming Wei, Chenhao Lu, Xiaofan Li, Linning Xu, Zhengrong Xue, Zhecheng Yuan, Dahua Lin, Jiangmiao Pang, Huazhe Xu",
+    "category": "WAM",
+    "tags": [
+      "持久记忆",
+      "KV缓存",
+      "逐帧gist",
+      "非马尔可夫控制"
+    ],
+    "published": "2026-06-18",
+    "added": "2026-09-08",
+    "readingMinutes": 30,
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.20562",
+    "htmlPath": "papers/memorywam.html",
+    "featured": false,
+    "demo": false
   }
 ]
