@@ -42,5 +42,27 @@
     "htmlPath": "papers/memorywam.html",
     "featured": false,
     "demo": false
+  },
+  {
+    "id": "agra",
+    "title": "Making Foresight Actionable: Repurposing Representation Alignment in World Action Models",
+    "subtitle": "用空间语义对齐，让世界模型的预测特征更适合动作控制",
+    "summary": "AGRA在动作头使用的高噪声视频分支上引入冻结DINOv2对齐，保留多层预测桥接；报告分析真机34%到80%的成功率、少样本仿真消融及注意力和隐状态干预证据，并明确教师映射、代码公开与控制接口的复现边界。",
+    "authors": "Lu Qiu, Yizhuo Li, Yi Chen, Yuying Ge, Yixiao Ge, Xihui Liu",
+    "category": "WAM",
+    "tags": [
+      "表征对齐",
+      "DINOv2",
+      "多层桥接",
+      "动作相关性"
+    ],
+    "published": "2026-06-10",
+    "added": "2026-09-09",
+    "readingMinutes": 30,
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.12217",
+    "htmlPath": "papers/agra.html",
+    "featured": false,
+    "demo": false
   }
 ]
