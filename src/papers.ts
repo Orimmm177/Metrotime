@@ -14,7 +14,6 @@ export interface Paper {
   tags: string[]
   published: string
   added: string
-  readingMinutes: number
   source: string
   sourceUrl: string
   htmlPath: string
@@ -46,7 +45,6 @@ export function parsePapers(data: unknown): Paper[] {
     if (!p || typeof p !== 'object' ||
       ['id', 'title', 'subtitle', 'summary', 'authors', 'category', 'source', 'sourceUrl', 'htmlPath', 'published', 'added'].some(key => typeof p[key] !== 'string' || !p[key].trim()) ||
       !Array.isArray(p.tags) || !p.tags.every((tag: unknown) => typeof tag === 'string') ||
-      !Number.isFinite(p.readingMinutes) || p.readingMinutes <= 0 ||
       !/^papers\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.html$/.test(p.htmlPath) ||
       !/^https:\/\//.test(p.sourceUrl) ||
       [p.added, p.published].some(date => !/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(date))) ||

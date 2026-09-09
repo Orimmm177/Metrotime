@@ -13,7 +13,6 @@ export async function validatePapers(papers, publicDir) {
     if (ids.has(paper.id)) throw new Error(`${label}: duplicate id ${paper.id}`)
     ids.add(paper.id)
     if (!Array.isArray(paper.tags) || !paper.tags.every(tag => typeof tag === 'string' && tag.trim())) throw new Error(`${label}: invalid tags`)
-    if (!Number.isInteger(paper.readingMinutes) || paper.readingMinutes < 1) throw new Error(`${label}: invalid readingMinutes`)
     for (const date of [paper.published, paper.added]) {
       if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(date)) || new Date(date).toISOString().slice(0, 10) !== date) throw new Error(`${label}: invalid date ${date}`)
     }

@@ -2,7 +2,7 @@
 
 可部署到 GitHub Pages 的个人论文阅读档案，基于 **TypeScript + React + Vite**，无后端。
 
-支持论文卡片／列表视图、关键词搜索、研究方向筛选、收录／发表日期排序、浏览器本地收藏、推荐阅读与移动端布局。每份报告是独立 HTML，支持目录跳转、返回首页和打印。
+支持论文卡片／列表视图、关键词搜索、研究方向筛选、发表日期排序、浏览器本地收藏、推荐阅读与移动端布局。每份报告是独立 HTML，支持目录跳转、返回首页和打印。
 
 论文清单初始为空，不包含示例论文。当前研究方向为 **WAM、Deep Learning、LLM**，尚未收录论文的方向也会显示。
 
@@ -50,7 +50,6 @@ npm run preview
   "tags": ["Transformer", "Reasoning"],
   "published": "2026-09-01",
   "added": "2026-09-07",
-  "readingMinutes": 12,
   "source": "arXiv",
   "sourceUrl": "https://arxiv.org/abs/替换为真实编号",
   "htmlPath": "papers/my-paper.html",
@@ -72,12 +71,13 @@ npm run preview
 
 - `id`：稳定且唯一，用于本地收藏；不要随标题修改。
 - `htmlPath`：相对 `public/`，必须以 `papers/` 开头、以 `.html` 结尾；文件名和子目录使用英文、数字、连字符或下划线。
-- `added`：报告收录日期；`published`：论文首发日期。使用真实的 `YYYY-MM-DD` 日期。
+- `published`：真实论文首次发表日期，首页卡片、列表、推荐区与报告页头均展示此日期，默认按最新发表排序。arXiv 论文使用 v1 首次提交日期。
+- `added`：内部保存的报告收录日期，不在阅读页面中作为论文日期展示。两种日期均使用 `YYYY-MM-DD`。
 - `featured`：可选，最多一篇为 `true`；没有推荐时首页推荐区域隐藏。
 - `demo`：可选，示例内容设为 `true`，正式分析设为 `false`。
 - `previewImage`：必填，包含模型自身架构图的 `src`、描述性 `alt`、图号／来源标签 `sourceLabel`、真实 HTTPS 来源 `sourceUrl`。支持本地 PNG、JPEG、WebP、SVG；图片放入 `public/papers/` 下，清单路径不带 `public/`。封面保持原始比例、完整呈现，加载失败显示缺图状态，不再回退到 Attention 图。旧 `visual` 字段已停用。
 - `sourceUrl`：论文真实的 HTTPS 原文地址。
-- `readingMinutes`：按实际报告长度估算的正整数。
+- 不生成或展示阅读时长，清单不需要 `readingMinutes`；旧条目可删除该字段。
 
 普通报告的返回链接使用 `../index.html`；嵌套目录里的报告应调整相对层级。报告资源使用相对地址，避免写死 `/papers/...`，以兼容 GitHub Pages 仓库子路径。
 
@@ -91,7 +91,7 @@ npm run preview
 
 本站负责展示，**不会在浏览器内定时抓取论文或运行 Codex**。当前没有创建自动任务。后续可以给外部 Codex 任务提供研究来源、执行时间和筛选条件，并采用以下约定：
 
-> 阅读指定网站的新论文，核对原始来源，并按研究问题、相关工作、核心方法、关键公式、实验与证据、局限性、复现要点和进一步思考生成独立 HTML。将文件保存到 public/papers/，更新 public/papers.json；以稳定 ID 去重，保留已有记录。注明原文链接、论文发表日期和本次收录日期，区分原文结论与分析者推断。运行 npm test 与 npm run build；在预览确认内容和链接正确后，按已授权的提交规则提交并推送到部署分支。
+> 阅读指定网站的新论文，核对原始来源，并按研究问题、相关工作、核心方法、关键公式、实验与证据、局限性、复现要点和进一步思考生成独立 HTML。将文件保存到 public/papers/，更新 public/papers.json；以稳定 ID 去重，保留已有记录。注明原文链接和论文首次发表日期；本次收录日期仅保存为内部元数据，不显示阅读时长，区分原文结论与分析者推断。运行 npm test 与 npm run build；在预览确认内容和链接正确后，按已授权的提交规则提交并推送到部署分支。
 
 ## 目录
 

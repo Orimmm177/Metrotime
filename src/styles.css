@@ -32,3 +32,4 @@
 @media(min-width:1550px){.model-preview-image{height:240px}}
 @media(max-width:1000px){.list-layout .paper-card{grid-template-columns:200px 1fr}}
 @media(max-width:480px){.model-preview-image{height:210px}.list-layout .paper-card{grid-template-columns:1fr}.list-layout .model-preview{border-right:0;border-bottom:1px solid var(--border)}.list-layout .model-preview-image{height:180px}.list-layout .model-preview figcaption{padding:9px 16px;font-size:11px}.featured-art{display:block}}
+.featured-bottom>time{font-size:12px;color:#8b7b99}
