@@ -7,12 +7,15 @@ import { validatePapers } from './validate-papers.mjs'
 
 const publicDir = await mkdtemp(join(tmpdir(), 'metrotime-validation-'))
 await mkdir(join(publicDir, 'papers'))
+await mkdir(join(publicDir, 'papers/previews'))
+await writeFile(join(publicDir, 'papers/previews/first.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><text x="10" y="30">Architecture</text></svg>')
 const papers = ['first', 'second'].map((id, index) => ({
   id, title: 'Example', subtitle: 'Example subtitle', summary: 'Example summary',
   authors: 'Author', category: 'Research', source: 'arXiv', tags: ['Example'],
   sourceUrl: 'https://arxiv.org/abs/1706.03762', htmlPath: `papers/${id}.html`,
   published: '2017-06-12', added: '2026-09-07', readingMinutes: 4,
   featured: index === 0,
+  previewImage: { src: 'papers/previews/first.svg', alt: 'Test model architecture', sourceLabel: 'Figure 2', sourceUrl: 'https://arxiv.org/abs/1706.03762' },
 }))
 for (const paper of papers) await writeFile(join(publicDir, paper.htmlPath), '<!doctype html><html><head><title>Example</title></head><body>Example</body></html>')
 after(() => rm(publicDir, { recursive: true, force: true }))
@@ -45,4 +48,16 @@ test('invalid metadata produces a clear build error', async () => {
 })
 test('the featured report is unambiguous', async () => {
   await assert.rejects(validatePapers([papers[0], { ...papers[1], featured: true }], publicDir), /at most one/)
+})
+
+test('a model report cannot silently fall back to a generic architecture', async () => {
+  await assert.rejects(validatePapers(one({ previewImage: undefined }), publicDir), /previewImage/)
+})
+
+test('architecture previews require a real local asset and attribution', async () => {
+  const previewImage = { src: 'papers/previews/first.png', alt: 'First model architecture', sourceLabel: 'Figure 2', sourceUrl: 'https://arxiv.org/abs/1706.03762' }
+  await assert.rejects(validatePapers(one({ previewImage: { ...previewImage, src: 'papers/previews/missing.png' } }), publicDir), /preview image does not exist/)
+  await assert.rejects(validatePapers(one({ previewImage: { ...previewImage, src: 'papers/../private.png' } }), publicDir), /safe local image path/)
+  await assert.rejects(validatePapers(one({ previewImage: { ...previewImage, alt: '' } }), publicDir), /previewImage/)
+  await assert.rejects(validatePapers(one({ previewImage: { ...previewImage, sourceUrl: 'javascript:alert(1)' } }), publicDir), /previewImage/)
 })

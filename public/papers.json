@@ -19,7 +19,13 @@
     "sourceUrl": "https://arxiv.org/abs/2606.21088",
     "htmlPath": "papers/mv-wam.html",
     "demo": false,
-    "featured": false
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/mv-wam-architecture.png",
+      "alt": "论文图2：MV-WAM完整架构、训练阶段与价值回滚",
+      "sourceLabel": "论文图 2",
+      "sourceUrl": "https://arxiv.org/abs/2606.21088"
+    }
   },
   {
     "id": "memorywam",
@@ -41,7 +47,13 @@
     "sourceUrl": "https://arxiv.org/abs/2606.20562",
     "htmlPath": "papers/memorywam.html",
     "featured": false,
-    "demo": false
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/memorywam-architecture.png",
+      "alt": "论文图2：MemoryWAM 双专家与混合记忆整体架构",
+      "sourceLabel": "论文图 2",
+      "sourceUrl": "https://arxiv.org/abs/2606.20562"
+    }
   },
   {
     "id": "agra",
@@ -63,6 +75,12 @@
     "sourceUrl": "https://arxiv.org/abs/2606.12217",
     "htmlPath": "papers/agra.html",
     "featured": false,
-    "demo": false
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/agra-architecture.png",
+      "alt": "论文图7：AGRA与双DiT世界动作模型整体架构",
+      "sourceLabel": "论文图 7",
+      "sourceUrl": "https://arxiv.org/abs/2606.12217"
+    }
   }
 ]

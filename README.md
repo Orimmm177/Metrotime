@@ -36,7 +36,7 @@ npm run preview
 
 ## 添加一篇论文
 
-1. 将独立 HTML 保存到 `public/papers/my-paper.html`，可复用 `report.css` 或使用自己的完整页面。
+1. 将独立 HTML 保存到 `public/papers/my-paper.html`，可复用 `report.css` 或使用自己的完整页面。将该模型的论文／官方架构图保存到 `public/papers/previews/my-paper-architecture.png`，核对图号和来源；报告中已嵌入的原图可以直接提取。
 2. 在 `public/papers.json` 数组中追加记录：
 
 ```json
@@ -55,7 +55,13 @@ npm run preview
   "sourceUrl": "https://arxiv.org/abs/替换为真实编号",
   "htmlPath": "papers/my-paper.html",
   "featured": false,
-  "demo": false
+  "demo": false,
+  "previewImage": {
+    "src": "papers/previews/my-paper-architecture.png",
+    "alt": "该模型的整体架构及模块连接关系",
+    "sourceLabel": "论文图 2",
+    "sourceUrl": "https://arxiv.org/abs/替换为真实编号"
+  }
 }
 ```
 
@@ -69,7 +75,7 @@ npm run preview
 - `added`：报告收录日期；`published`：论文首发日期。使用真实的 `YYYY-MM-DD` 日期。
 - `featured`：可选，最多一篇为 `true`；没有推荐时首页推荐区域隐藏。
 - `demo`：可选，示例内容设为 `true`，正式分析设为 `false`。
-- `visual`：可选，概念图样式为 `attention`、`lora`、`vit`、`rag`、`dpo`、`resnet`；省略时使用默认注意力示意图。这些是装饰性概念示意，不是论文原图。
+- `previewImage`：必填，包含模型自身架构图的 `src`、描述性 `alt`、图号／来源标签 `sourceLabel`、真实 HTTPS 来源 `sourceUrl`。支持本地 PNG、JPEG、WebP、SVG；图片放入 `public/papers/` 下，清单路径不带 `public/`。封面保持原始比例、完整呈现，加载失败显示缺图状态，不再回退到 Attention 图。旧 `visual` 字段已停用。
 - `sourceUrl`：论文真实的 HTTPS 原文地址。
 - `readingMinutes`：按实际报告长度估算的正整数。
 
@@ -92,13 +98,14 @@ npm run preview
 ```text
 src/
   App.tsx                 首页及阅读交互
-  Diagram.tsx             论文概念示意图
+  PaperPreview.tsx        模型架构预览及来源
   papers.ts               数据类型、运行时检查与路径
   research-directions.json 预设研究方向
   styles.css              响应式样式
 public/
   papers.json             论文清单
   papers/*.html           独立分析报告
+  papers/previews/        各模型的架构预览图
   papers/report.css       报告阅读样式
 scripts/
   validate-papers.mjs      发布前数据与文件检查
@@ -107,4 +114,4 @@ scripts/
   deploy.yml              GitHub Pages 自动部署
 ```
 
-收藏通过 `localStorage` 保存在当前浏览器，不跨设备同步。Google Fonts 加载失败时使用系统字体；正文与概念图不依赖远程图片。更换仓库时修改 `src/App.tsx` 的 `githubUrl`。
+收藏通过 `localStorage` 保存在当前浏览器，不跨设备同步。Google Fonts 加载失败时使用系统字体；正文与架构预览不依赖远程图片。更换仓库时修改 `src/App.tsx` 的 `githubUrl`。
