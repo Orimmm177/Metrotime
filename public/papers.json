@@ -79,5 +79,114 @@
       "sourceLabel": "论文图 7",
       "sourceUrl": "https://arxiv.org/abs/2606.12217"
     }
+  },
+  {
+    "id": "c3ache",
+    "title": "C³ache: Accelerating World Action Models with Cross Inference Chunk Cache",
+    "subtitle": "跨动作块复用整栈残差：省下重复计算，也承担缓存过期的代价",
+    "summary": "在Fast-WAM中跨动作块复用同一去噪步的整栈残差，保持10次采样更新，减少DiT重复计算；拆解固定刷新、尾部步保留与成功率代价。",
+    "authors": "Weisen Zhao, Lam Nguyen, Zhicong Lu, Yuzhang Shang",
+    "category": "WAM",
+    "tags": [
+      "推理加速",
+      "Cross-chunk Cache",
+      "Flow Matching",
+      "Fast-WAM"
+    ],
+    "published": "2026-06-08",
+    "added": "2026-09-09",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.08962",
+    "htmlPath": "papers/c3ache.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/c3ache-architecture.png",
+      "alt": "C³ache论文图3：完整DiT计算与残差复用分支，以及同一去噪步跨动作块刷新调度",
+      "sourceLabel": "论文图3 · 原始架构与缓存调度",
+      "sourceUrl": "https://arxiv.org/abs/2606.08962"
+    }
+  },
+  {
+    "id": "flash-wam",
+    "title": "Flash-WAM: Modality-Aware Distillation for World Action Models",
+    "subtitle": "为视频与动作匹配一致性函数，压缩联合去噪步数",
+    "summary": "Flash-WAM 保留 LingBot-VA 的未来视频与动作生成，通过模态感知一致性蒸馏将 RoboTwin 推理压缩至 1v/1a：单 L40S 每 chunk 348 ms、成功率 81.41%。报告区分 1v/2a 结果，并核验代码、真机证据和延迟口径。",
+    "authors": "Arman Akbari et al.",
+    "category": "WAM",
+    "tags": [
+      "推理加速",
+      "Consistency Distillation",
+      "Modality-Aware",
+      "LingBot-VA"
+    ],
+    "published": "2026-06-03",
+    "added": "2026-09-09",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.05254",
+    "htmlPath": "papers/flash-wam.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/flash-wam-architecture.png",
+      "alt": "Flash-WAM 论文图 2：视频与动作噪声诊断、共享主干一致性蒸馏及一步自回归部署",
+      "sourceLabel": "论文图 2 · 方法总览",
+      "sourceUrl": "https://arxiv.org/html/2606.05254v1#S4.F2"
+    }
+  },
+  {
+    "id": "fast-wam",
+    "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+    "subtitle": "把未来留在训练里：首帧表征、动作去噪与推理成本的受控拆解",
+    "summary": "保留视频联合训练，通过结构化注意力让动作只读取当前帧，推理时复用逐层视觉KV并省去未来视频生成。深入核验190 ms延迟、成功率取舍与官方代码差异。",
+    "authors": "Tianyuan Yuan, Zibin Dong, Yicheng Liu, Hang Zhao",
+    "category": "WAM",
+    "tags": [
+      "推理加速",
+      "World Action Model",
+      "Video Co-training",
+      "KV Cache",
+      "Flow Matching"
+    ],
+    "published": "2026-03-17",
+    "added": "2026-09-09",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2603.16666",
+    "htmlPath": "papers/fast-wam.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/fast-wam-architecture.png",
+      "alt": "Fast-WAM 图2a：语言与VAE编码、视频DiT和动作专家的联合训练架构",
+      "sourceLabel": "论文图2a · 官方模型架构",
+      "sourceUrl": "https://arxiv.org/html/2603.16666v2#S3.F2"
+    }
+  },
+  {
+    "id": "himem-wam",
+    "title": "HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation",
+    "subtitle": "用分层运动表示与技能边界记忆，连接短时控制和长期任务状态",
+    "summary": "HiMem-WAM以光流潜动作、层级技能与边界门控记忆支持因果控制。报告解析LIBERO-PLUS 76.0%和RMBench 26.3%的证据，并逐项核验公开骨架、Wan后端与论文完整记忆算法的实现差异。",
+    "authors": "Xiaoquan Sun, Ruijian Zhang, Chen Cao, Yihan Sun, Jiahui Chen, Zetian Xu, Bo Chen, Haijier Chen, Zhen Yang, Jiarun Zhu, Yijun Hong, JingZhe Xu, Jingrui Pang, Mingqi Yuan, Jiayu Chen",
+    "category": "WAM",
+    "tags": [
+      "分层潜动作",
+      "技能边界",
+      "门控记忆",
+      "因果控制"
+    ],
+    "published": "2026-06-09",
+    "added": "2026-09-09",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.10363",
+    "htmlPath": "papers/himem-wam.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/himem-wam-architecture.png",
+      "alt": "HiMem-WAM 论文图1：三阶段潜动作、Wan骨干与门控记忆框架",
+      "sourceLabel": "论文图 1",
+      "sourceUrl": "https://arxiv.org/abs/2606.10363"
+    }
   }
 ]
