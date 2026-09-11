@@ -188,5 +188,33 @@
       "sourceLabel": "论文图 1",
       "sourceUrl": "https://arxiv.org/abs/2606.10363"
     }
+  },
+  {
+    "id": "motionwam",
+    "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
+    "subtitle": "一次视频前向，四步动作采样：从第一视角动态到人形全身控制",
+    "summary": "MotionWAM以一次Video DiT中间特征条件化Motion DiT，结合三阶段学习与SONIC全身运动表示。报告拆解九任务76.1%成功率与4.9 Hz动作块输出的证据，并保留动作表示歧义、相关代码差异和泛化边界。",
+    "authors": "Jia Zheng、Teli Ma、Yudong Fan、Zifan Wang、Shuo Yang、Junwei Liang",
+    "category": "WAM",
+    "tags": [
+      "一次视频前向",
+      "全身运动表示",
+      "三阶段训练",
+      "SONIC"
+    ],
+    "published": "2026-06-08",
+    "added": "2026-09-11",
+    "readingMinutes": 43,
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.09215",
+    "htmlPath": "papers/motionwam.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/motionwam-architecture.png",
+      "alt": "MotionWAM论文图3：Video DiT与Motion DiT连接三阶段训练、运动表示和手部通道",
+      "sourceLabel": "论文图 3 · 第5页",
+      "sourceUrl": "https://arxiv.org/abs/2606.09215"
+    }
   }
 ]
