@@ -244,5 +244,33 @@
       "sourceLabel": "论文图 2 · 第4页",
       "sourceUrl": "https://arxiv.org/abs/2606.09811"
     }
+  },
+  {
+    "id": "efficient-wam",
+    "title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
+    "subtitle": "看清现在，粗略想象未来：1B双专家、低清潜变量与非对称去噪",
+    "summary": "Efficient-WAM将WAN教师切片蒸馏为紧凑视频专家，以高分辨率当前观测、低分辨率未来latent和2次视频/10次动作更新降低推理成本。报告区分基础版86.7%与RT版83.1%的仿真结果、98 ms真机计时边界，并核对官方缓存实现、数据统计及未完成的真机模板。",
+    "authors": "Jiajun Li, Tiecheng Guo, Yifan Ye, Rongyu Zhang, Xiaowei Chi, Qianpu Sun, Ying Li, Yunfan Lou, Yan Huang, Zhihe Lu, Meng Guo, Shanghang Zhang",
+    "category": "WAM",
+    "tags": [
+      "结构化剪枝",
+      "世界知识蒸馏",
+      "多尺度潜变量",
+      "非对称去噪"
+    ],
+    "published": "2026-06-08",
+    "added": "2026-09-12",
+    "readingMinutes": 30,
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.10040",
+    "htmlPath": "papers/efficient-wam.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/efficient-wam-architecture.png",
+      "alt": "Efficient-WAM论文图2：WAN教师切片蒸馏、高低分辨率视觉输入、0.8B视频专家、0.2B动作专家及KV缓存",
+      "sourceLabel": "论文图 2 · 第4页",
+      "sourceUrl": "https://arxiv.org/abs/2606.10040"
+    }
   }
 ]
