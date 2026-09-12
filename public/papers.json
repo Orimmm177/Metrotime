@@ -216,5 +216,33 @@
       "sourceLabel": "论文图 3 · 第5页",
       "sourceUrl": "https://arxiv.org/abs/2606.09215"
     }
+  },
+  {
+    "id": "aha-wam",
+    "title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
+    "subtitle": "慢世界上下文，快视觉反馈：拆解异步规划、OVCR与加速证据",
+    "summary": "AHA-WAM以低频Video DiT生成可复用上下文，最新观测通过OVCR修正K/V，动作DiT生成短块。报告核对92.80% RoboTwin成功率、真机预训练与24.17Hz测量边界，并追踪官方代码的相位训练、噪声分布与部署配置差异。",
+    "authors": "Jisong Cai、Long Ling、Shiwei Chu、Zhongshan Liu、Jiayue Kang、Zhixuan Liang、Wenjie Xu、Yinan Mao、Weinan Zhang、Xiaokang Yang、Ru Ying、Ran Zheng、Yao Mu",
+    "category": "WAM",
+    "tags": [
+      "异步规划执行",
+      "OVCR",
+      "滚动KV记忆",
+      "ODE蒸馏"
+    ],
+    "published": "2026-06-08",
+    "added": "2026-09-12",
+    "readingMinutes": 30,
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.09811",
+    "htmlPath": "papers/aha-wam.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/aha-wam-architecture.png",
+      "alt": "AHA-WAM论文图2：低频Video DiT、滚动KV记忆、观测路由OVCR、动作DiT和因果注意力结构",
+      "sourceLabel": "论文图 2 · 第4页",
+      "sourceUrl": "https://arxiv.org/abs/2606.09811"
+    }
   }
 ]
