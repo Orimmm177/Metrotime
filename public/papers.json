@@ -272,5 +272,33 @@
       "sourceLabel": "论文图 2 · 第4页",
       "sourceUrl": "https://arxiv.org/abs/2606.10040"
     }
+  },
+  {
+    "id": "dream-tac",
+    "title": "Dream-Tac: A Unified Tactile World Action Model for Contact-Rich Robot Manipulation",
+    "subtitle": "用接触门控连接触觉未来与动作生成",
+    "summary": "Dream-Tac 将视觉、双指触觉、状态与动作放进共享 DiT，以触觉帧差控制非触觉查询对触觉键的注意力偏置。报告拆解12槽输入、FlashBias等价变换及扩散残差缓存，核对六任务83.3%成功率，并揭示公开推理门控、缓存步数和归一化的复现差异。",
+    "authors": "Yunfan Lou, Yifan Ye, Yankai Fu, Jun Cen, Xiaowei Chi, Yaoxu Lyu, Peidong Jia, Sirui Han, Zhihe Lu, Shanghang Zhang",
+    "category": "WAM",
+    "tags": [
+      "触觉世界模型",
+      "CASA",
+      "统一DiT",
+      "FlashBias",
+      "扩散缓存"
+    ],
+    "published": "2026-06-07",
+    "added": "2026-09-13",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.08737",
+    "htmlPath": "papers/dream-tac.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/dream-tac-architecture.png",
+      "alt": "Dream-Tac 论文图2：共享潜空间、DiT、触觉帧差门控和CASA注意力连接",
+      "sourceLabel": "论文图2 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2606.08737v1"
+    }
   }
 ]
