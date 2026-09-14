@@ -328,5 +328,33 @@
       "sourceLabel": "论文图1 · PDF第3页",
       "sourceUrl": "https://arxiv.org/pdf/2604.27792v5"
     }
+  },
+  {
+    "id": "x-wam",
+    "title": "Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising",
+    "subtitle": "几何监督改善动作，异步去噪减少等待",
+    "summary": "X-WAM在共享视频动作DiT末端加入单向深度分支，用ANS匹配动作先完成、视频后完成的噪声路径。报告从模块连接、动作坐标与数据窗口走到仿真和真机证据，核对latent深度损失、发布配置与论文预算差异，以及300ms延迟和阶段进度的适用边界。",
+    "authors": "Jun Guo, Qiwei Li, Peiyan Li, Zilong Chen, Nan Sun, Yifei Su, Heyun Wang, Yuan Zhang, Xinghang Li, Huaping Liu",
+    "category": "WAM",
+    "tags": [
+      "4D世界模型",
+      "RGB-D",
+      "单向深度分支",
+      "ANS",
+      "异步去噪"
+    ],
+    "published": "2026-04-29",
+    "added": "2026-09-14",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.26694",
+    "htmlPath": "papers/x-wam.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/x-wam-architecture.png",
+      "alt": "X-WAM论文图2：多视角视频、状态、动作共享DiT，单向深度分支与ANS训练推理",
+      "sourceLabel": "论文图2 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2604.26694v2"
+    }
   }
 ]
