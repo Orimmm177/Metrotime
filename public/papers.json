@@ -300,5 +300,33 @@
       "sourceLabel": "论文图2 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2606.08737v1"
     }
+  },
+  {
+    "id": "motubrain",
+    "title": "Motubrain: An Advanced World Action Model for Robot Control",
+    "subtitle": "从三路联合建模走向连续机器人控制",
+    "summary": "MotuBrain以三路MoT、H-bridge和相对末端动作吸收异构数据，再通过AR后训练、V2A缓存与延迟约束实现连续控制。报告拆解完整训练推理链路，区分95.8%/96.1%的AR成绩与54.4倍Non-AR加速，并核对公开材料中的掩码、评分与复现缺口。",
+    "authors": "Motubrain Team, Chendong Xiang, Fan Bao, Haitian Liu, Hengkai Tan, Hongzhe Bi, James Li, Jiabao Liu, Jingrui Pang, Kiro Jing, Louis Liu, Mengchen Cai, Rongxu Cui, Ruowen Zhao, Runqing Wang, Shuhe Huang, Yao Feng, Yinze Rong, Zeyuan Wang, Jun Zhu",
+    "category": "WAM",
+    "tags": [
+      "三路MoT",
+      "H-bridge",
+      "V2A",
+      "相对末端动作",
+      "异步Chunk"
+    ],
+    "published": "2026-04-30",
+    "added": "2026-09-14",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.27792",
+    "htmlPath": "papers/motubrain.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/motubrain-architecture.png",
+      "alt": "MotuBrain论文图1：文本、视频、动作三路MoT，以及中层H-bridge联合注意力",
+      "sourceLabel": "论文图1 · PDF第3页",
+      "sourceUrl": "https://arxiv.org/pdf/2604.27792v5"
+    }
   }
 ]
