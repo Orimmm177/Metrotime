@@ -384,5 +384,33 @@
       "sourceLabel": "论文图1 · PDF第5页",
       "sourceUrl": "https://arxiv.org/pdf/2604.14732v2"
     }
+  },
+  {
+    "id": "aim",
+    "title": "AIM: Intent-Aware Unified world action Modeling with Spatial Value Maps",
+    "subtitle": "先明确在哪里交互，再把视觉未来变成动作",
+    "summary": "AIM以空间价值图连接视频预测与动作生成，提出意图因果注意力和自蒸馏RL。报告拆解接触标签、三流信息路径、训练与闭环推理，复核50任务均值，并揭示公开共享主干、mask微调和在线服务与论文方案的差异。",
+    "authors": "Liaoyuan Fan, Zetian Xu, Chen Cao, Wenyao Zhang, Mingqi Yuan, Jiayu Chen",
+    "category": "WAM",
+    "tags": [
+      "空间价值图",
+      "意图因果注意力",
+      "接触标注",
+      "自蒸馏RL",
+      "实现对照"
+    ],
+    "published": "2026-04-13",
+    "added": "2026-09-16",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.11135",
+    "htmlPath": "papers/aim.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/aim-architecture.png",
+      "alt": "AIM论文图2：Wan视频先验、空间价值图、动作头与两阶段监督及强化学习框架",
+      "sourceLabel": "论文图2 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2604.11135v1"
+    }
   }
 ]
