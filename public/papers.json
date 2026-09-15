@@ -356,5 +356,33 @@
       "sourceLabel": "论文图2 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2604.26694v2"
     }
+  },
+  {
+    "id": "wav",
+    "title": "World-Value-Action Model: Implicit Planning for Vision-Language-Action Systems",
+    "subtitle": "用价值评价筛选未来，再把未来转成动作",
+    "summary": "WAV将多视角视频、轨迹价值与动作专家连接，在潜噪声分布中进行精英筛选规划。报告核对三阶段训练、奖励与评分空间、首步隐藏缓存、LIBERO与Piper结果，并讨论候选分组、理论假设和实时部署边界。",
+    "authors": "Runze Li, Hongyin Zhang, Junxi Jin, Qixin Zeng, Zifeng Zhuang, Yiqi Tang, Shangke Lyu, Donglin Wang",
+    "category": "WAM",
+    "tags": [
+      "潜空间规划",
+      "价值专家",
+      "多视角DiT",
+      "Flow Matching",
+      "候选筛选"
+    ],
+    "published": "2026-04-16",
+    "added": "2026-09-15",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.14732",
+    "htmlPath": "papers/wav.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/wav-architecture.png",
+      "alt": "WAV论文图1：视频、轨迹价值与动作专家，以及潜噪声分布更新和隐藏特征连接",
+      "sourceLabel": "论文图1 · PDF第5页",
+      "sourceUrl": "https://arxiv.org/pdf/2604.14732v2"
+    }
   }
 ]
