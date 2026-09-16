@@ -470,5 +470,34 @@
       "sourceLabel": "论文图3 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2603.17240v2"
     }
+  },
+  {
+    "id": "dit4dit",
+    "title": "DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable Robot Control",
+    "subtitle": "一次视频前向驱动动作：双DiT与三时间步的机制及复现边界",
+    "summary": "DiT4DiT以Cosmos视频DiT的中间特征条件化动作DiT，一次视频前向连接四步动作采样。报告覆盖三时间步、双流匹配、数据与闭环控制，复算基准和真机结果，核对公开代码detach、采样分布与发布配置差异。",
+    "authors": "Teli Ma, Jia Zheng, Zifan Wang, Chunli Jiang, Andy Cui, Junwei Liang, Shuo Yang",
+    "category": "WAM",
+    "tags": [
+      "双DiT",
+      "视频生成表示",
+      "流匹配",
+      "三时间步",
+      "机器人控制"
+    ],
+    "published": "2026-03-11",
+    "added": "2026-09-17",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2603.10448",
+    "htmlPath": "papers/dit4dit.html",
+    "demo": false,
+    "featured": false,
+    "readingMinutes": 28,
+    "previewImage": {
+      "src": "papers/previews/dit4dit-architecture.png",
+      "alt": "DiT4DiT论文图2：视频DiT读取图像和语言，动作DiT结合状态与生成特征预测控制轨迹",
+      "sourceLabel": "论文图2 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2603.10448v2"
+    }
   }
 ]
