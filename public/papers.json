@@ -441,5 +441,34 @@
       "sourceLabel": "论文图1 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2604.16484v1"
     }
+  },
+  {
+    "id": "gigaworld-policy",
+    "title": "GigaWorld-Policy: An Efficient Action-Centered World–Action Model",
+    "subtitle": "动作中心因果注意力：训练保留世界监督，推理只生成动作",
+    "summary": "GigaWorld-Policy以共享Wan2.2 5B与模态块因果注意力连接动作和视觉未来：训练联合监督，推理可删去未来视频。报告追踪原版代码、数据与闭环边界，复算50任务结果，辨析约9倍加速、真机评分及公开配置差异。",
+    "authors": "Angen Ye, Boyuan Wang, Chaojun Ni, Guan Huang, Guosheng Zhao, Hao Li, Hengtao Li, Jie Li, Jindi Lv, Jingyu Liu, Min Cao, Peng Li, Qiuping Deng, Wenjun Mei, Xiaofeng Wang, Xinze Chen, Xinyu Zhou, Yang Wang, Yifan Chang, Yifan Li, Yukun Zhou, Yun Ye, Zhichao Liu, Zheng Zhu",
+    "category": "WAM",
+    "tags": [
+      "因果注意力",
+      "共享DiT",
+      "动作生成",
+      "视频监督",
+      "推理效率"
+    ],
+    "published": "2026-03-18",
+    "added": "2026-09-16",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2603.17240",
+    "htmlPath": "papers/gigaworld-policy.html",
+    "demo": false,
+    "featured": false,
+    "readingMinutes": 25,
+    "previewImage": {
+      "src": "papers/previews/gigaworld-policy-architecture.png",
+      "alt": "GigaWorld-Policy论文图3：共享因果DiT连接当前观测、状态和动作，未来视频分支在推理时可选",
+      "sourceLabel": "论文图3 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2603.17240v2"
+    }
   }
 ]
