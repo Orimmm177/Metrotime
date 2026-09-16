@@ -412,5 +412,34 @@
       "sourceLabel": "论文图2 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2604.11135v1"
     }
+  },
+  {
+    "id": "dexworldmodel",
+    "title": "DexWorldModel: Causal Latent World Modeling towards Automated Learning of Embodied Tasks",
+    "subtitle": "以语义未来、双状态记忆和异步推理连接世界与动作",
+    "summary": "DexWorldModel以DINOv3特征作为世界预测目标，共享视频与动作主干，以双状态TTT区分真实历史和推测未来，通过SAI重叠计算与执行。报告拆解模型与在线数据管线，复核50任务94%成功率，并明确流时间冲突、效率证据和公开实现边界。",
+    "authors": "Yueci Deng, Guiliang Liu, Kui Jia",
+    "category": "WAM",
+    "tags": [
+      "DINOv3",
+      "双状态TTT",
+      "异步推理",
+      "在线数据流",
+      "Sim2Real"
+    ],
+    "published": "2026-04-13",
+    "added": "2026-09-16",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.16484",
+    "htmlPath": "papers/dexworldmodel.html",
+    "demo": false,
+    "featured": false,
+    "readingMinutes": 25,
+    "previewImage": {
+      "src": "papers/previews/dexworldmodel-architecture.png",
+      "alt": "DexWorldModel论文图1：冻结DINOv3与语言编码器、共享潜在视频和动作主干、TTT记忆连接",
+      "sourceLabel": "论文图1 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2604.16484v1"
+    }
   }
 ]
