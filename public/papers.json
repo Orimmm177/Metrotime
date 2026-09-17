@@ -499,5 +499,33 @@
       "sourceLabel": "论文图2 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2603.10448v2"
     }
+  },
+  {
+    "id": "adaworldpolicy",
+    "title": "AdaWorldPolicy: World-Model-Driven Diffusion Policy with Online Adaptive Learning for Robotic Manipulation",
+    "subtitle": "以视觉与力反馈驱动在线适应：三专家架构及评测边界",
+    "summary": "AdaWorldPolicy以视觉、动作和力三条DiT通过MMSA联合建模，用双模式切换和真实反馈驱动LoRA在线适应。报告覆盖架构、数据、训练与闭环，复算CALVIN和真机指标，解释跨试次适应协议、公开实现缺口与泛化边界。",
+    "authors": "Ge Yuan, Qiyuan Qiao, Jing Zhang, Dong Xu",
+    "category": "WAM",
+    "tags": [
+      "在线适应",
+      "多模态自注意力",
+      "力预测",
+      "流匹配",
+      "LoRA"
+    ],
+    "published": "2026-02-23",
+    "added": "2026-09-17",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2602.20057",
+    "htmlPath": "papers/adaworldpolicy.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/adaworldpolicy-architecture.png",
+      "alt": "AdaWorldPolicy论文图2：世界模型、力预测器与动作模型通过MMSA交互，并以LoRA进行在线更新",
+      "sourceLabel": "论文图2 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2602.20057v1"
+    }
   }
 ]
