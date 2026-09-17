@@ -527,5 +527,33 @@
       "sourceLabel": "论文图2 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2602.20057v1"
     }
+  },
+  {
+    "id": "frappe",
+    "title": "FRAPPE: Infusing World Modeling into Generalist Policies via Multiple Future Representation Alignment",
+    "subtitle": "从单教师未来对齐到三专家动作融合：机制、证据与复现边界",
+    "summary": "FRAPPE以单流Theia未来表征对齐初始化RDT，再通过三路Prefix/LoRA专家与路由融合增强动作策略。报告追踪两阶段训练、推理和无动作视频共训练，复核实验收益，并定位公开代码的未来帧切片、参数共享和部署依赖问题。",
+    "authors": "Han Zhao, Jingbo Wang, Wenxuan Song, Shuai Chen, Yang Liu, Yan Wang, Haoang Li, Donglin Wang",
+    "category": "WAM",
+    "tags": [
+      "未来表征对齐",
+      "多教师",
+      "LoRA",
+      "动作扩散",
+      "人类视频"
+    ],
+    "published": "2026-02-19",
+    "added": "2026-09-18",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2602.17259",
+    "htmlPath": "papers/frappe.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/frappe-architecture.png",
+      "alt": "FRAPPE论文图2：Theia单流中期训练扩展为三路Prefix与LoRA专家，由Router融合动作隐状态；教师只用于训练",
+      "sourceLabel": "论文图2 · PDF第3页",
+      "sourceUrl": "https://arxiv.org/pdf/2602.17259v1"
+    }
   }
 ]
