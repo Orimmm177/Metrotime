@@ -584,5 +584,34 @@
       "sourceLabel": "论文图4 · PDF第6页",
       "sourceUrl": "https://arxiv.org/pdf/2602.15922v1"
     }
+  },
+  {
+    "id": "lda-1b",
+    "title": "LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion",
+    "subtitle": "LDA-1B：按数据质量分配监督，学习可迁移的潜空间动力学",
+    "summary": "LDA-1B以数据质量分配策略、动力学与视觉预测任务，在DINO特征空间学习世界变化；双流MM-DiT共享注意力，部署直接生成动作。结合20页论文与官方代码，核对质量路由、混合数据收益和部分完成评分。",
+    "authors": "Jiangran Lyu, Kai Liu, Xuheng Zhang, Haoran Liao, Yusen Feng, Wenxuan Zhu, Tingrui Shen, Jiayi Chen, Jiazhao Zhang, Yifei Dong, Wenbo Cui, Senmao Qi, Shuo Wang, Yixin Zheng, Mi Yan, Xuesong Shi, Haoran Li, Dongbin Zhao, Ming-Yu Liu, Zhizheng Zhang, Li Yi, Yizhou Wang, He Wang",
+    "category": "WAM",
+    "tags": [
+      "LDA-1B",
+      "DINOv3",
+      "MM-DiT",
+      "数据质量分流",
+      "Flow Matching",
+      "跨本体学习"
+    ],
+    "published": "2026-02-12",
+    "added": "2026-09-19",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2602.12215",
+    "htmlPath": "papers/lda-1b.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/lda-1b-architecture.png",
+      "alt": "LDA-1B论文图2：四任务条件、动作与DINO视觉双流、联合自注意力与VLM交叉注意力",
+      "sourceLabel": "论文图2 · PDF第3页",
+      "sourceUrl": "https://arxiv.org/pdf/2602.12215v2"
+    }
   }
 ]
