@@ -555,5 +555,34 @@
       "sourceLabel": "论文图2 · PDF第3页",
       "sourceUrl": "https://arxiv.org/pdf/2602.17259v1"
     }
+  },
+  {
+    "id": "dreamzero",
+    "title": "World Action Models are Zero-shot Policies",
+    "subtitle": "DreamZero：联合视频动作生成、真实视觉缓存与少步推理",
+    "summary": "DreamZero让14B视频DiT联合生成未来视频与动作，以真实观测更新视觉缓存；Flash通过解耦噪声适配少步推理。报告结合36页论文与官方代码，区分任务进度和成功率，追踪训练、闭环执行及公开实现与论文设置的差异。",
+    "authors": "Seonghyeon Ye, Yunhao Ge, Kaiyuan Zheng, Shenyuan Gao, Sihyun Yu, George Kurian, Suneel Indupuru, You Liang Tan, Chuning Zhu, Jiannan Xiang, Ayaan Malik, Kyungmin Lee, William Liang, Nadun Ranawaka, Jiasheng Gu, Yinzhen Xu, Guanzhi Wang, Fengyuan Hu, Avnish Narayan, Johan Bjorck, Jing Wang, Gwanghyun Kim, Dantong Niu, Ruijie Zheng, Yuqi Xie, Jimmy Wu, Qi Wang, Ryan Julian, Danfei Xu, Yilun Du, Yevgen Chebotar, Scott Reed, Jan Kautz, Yuke Zhu, Linxi “Jim” Fan, Joel Jang",
+    "category": "WAM",
+    "tags": [
+      "DreamZero",
+      "视频动作联合生成",
+      "Flow Matching",
+      "零样本策略",
+      "KV Cache",
+      "Flash"
+    ],
+    "published": "2026-02-17",
+    "added": "2026-09-18",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2602.15922",
+    "htmlPath": "papers/dreamzero.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/dreamzero-architecture.png",
+      "alt": "DreamZero论文图4：共享DiT联合视频动作训练与真实观测回写KV缓存的闭环推理",
+      "sourceLabel": "论文图4 · PDF第6页",
+      "sourceUrl": "https://arxiv.org/pdf/2602.15922v1"
+    }
   }
 ]
