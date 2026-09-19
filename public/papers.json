@@ -613,5 +613,34 @@
       "sourceLabel": "论文图2 · PDF第3页",
       "sourceUrl": "https://arxiv.org/pdf/2602.12215v2"
     }
+  },
+  {
+    "id": "lingbot-va",
+    "title": "Causal World Modeling for Robot Control",
+    "subtitle": "LingBot-VA：以视觉未来、逆动力学与真实反馈构成控制闭环",
+    "summary": "LingBot-VA以因果视频预测、逆动力学与真实反馈缓存形成闭环，并用FDM校正异步执行中的过时未来。本报告区分论文双流MoT与公开共享主干，复核31页论文、动作对齐、50任务与240次真机试验表格。",
+    "authors": "Lin Li, Qihang Zhang, Yiming Luo, Shuai Yang, Ruilin Wang, Fei Han, Mingrui Yu, Zelin Gao, Nan Xue, Xing Zhu, Yujun Shen, Yinghao Xu",
+    "category": "WAM",
+    "tags": [
+      "LingBot-VA",
+      "因果世界模型",
+      "逆动力学",
+      "KV Cache",
+      "异步FDM",
+      "Flow Matching"
+    ],
+    "published": "2026-01-29",
+    "added": "2026-09-19",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2601.21998",
+    "htmlPath": "papers/lingbot-va.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/lingbot-va-architecture.png",
+      "alt": "LingBot-VA论文图2：语言条件、视频与动作模型、预测视觉未来与真实观测反馈循环",
+      "sourceLabel": "论文图2 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2601.21998v2"
+    }
   }
 ]
