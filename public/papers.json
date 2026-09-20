@@ -642,5 +642,34 @@
       "sourceLabel": "论文图2 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2601.21998v2"
     }
+  },
+  {
+    "id": "fawam",
+    "title": "FAWAM: Force-Aware World Action Models for Closed-Loop Contact-Rich Manipulation",
+    "subtitle": "FAWAM：让预测接触力成为动作执行的反馈参照",
+    "summary": "FAWAM以历史力感知、动作与未来wrench联合预测及门控残差纠正连接接触闭环。报告核验19页论文与官方代码，解释四任务85%成功率、额外干预数据、扰动表头不一致及未公开的残差实现。",
+    "authors": "Haotian He, Zeyu Yan, Qipeng Liu, Ning Guo, Wenzhao Lian",
+    "category": "WAM",
+    "tags": [
+      "FAWAM",
+      "力反馈",
+      "接触操作",
+      "残差纠正",
+      "AdaLN-Zero",
+      "Flow Matching"
+    ],
+    "published": "2026-06-07",
+    "added": "2026-09-20",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.08555",
+    "htmlPath": "papers/fawam.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/fawam-architecture.png",
+      "alt": "FAWAM论文图2：1Hz力感知动作与wrench联合预测、10Hz门控残差纠正及人类干预数据采集",
+      "sourceLabel": "论文图2 · PDF第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2606.08555v2"
+    }
   }
 ]
