@@ -671,5 +671,34 @@
       "sourceLabel": "论文图2 · PDF第4页",
       "sourceUrl": "https://arxiv.org/pdf/2606.08555v2"
     }
+  },
+  {
+    "id": "world-pilot",
+    "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+    "subtitle": "World Pilot：用未来场景与轨迹先验引导 VLA",
+    "summary": "冻结 Cosmos Policy 通过未来潜变量与单 token 轨迹提示引导 VLA。报告结合15页论文和官方代码解释 LIBERO-Plus 84.7%、双通路消融、训练缓存、10步块级闭环，以及截断对齐、dropout与发布配置差异。",
+    "authors": "Zefu Lin, Rongxu Cui, Junjia Xu, Xiaojuan Jin, Wenling Li, Lue Fan, Zhaoxiang Zhang",
+    "category": "WAM",
+    "tags": [
+      "World Pilot",
+      "VLA",
+      "Latent Steering",
+      "Action Steering",
+      "OOD 泛化",
+      "冻结世界模型"
+    ],
+    "published": "2026-06-05",
+    "added": "2026-09-21",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.12403",
+    "htmlPath": "papers/world-pilot.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/world-pilot-architecture.png",
+      "alt": "World Pilot论文图2：冻结WAM向VLM注入未来潜变量，并以动作编码器单token前缀引导动作头",
+      "sourceLabel": "论文图2 · PDF第3页",
+      "sourceUrl": "https://arxiv.org/pdf/2606.12403v1"
+    }
   }
 ]
