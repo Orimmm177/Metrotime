@@ -700,5 +700,33 @@
       "sourceLabel": "论文图2 · PDF第3页",
       "sourceUrl": "https://arxiv.org/pdf/2606.12403v1"
     }
+  },
+  {
+    "id": "mwm",
+    "title": "Mask World Model: Predicting What Matters for Robust Robot Policy Learning",
+    "subtitle": "未来语义掩码如何塑造用于动作控制的世界表征",
+    "summary": "MWM通过未来mask预测减少外观干扰，以28层世界骨干的逐层特征引导动作专家。报告结合原论文与官方代码解析两阶段训练、首步缓存和闭环执行，并核对LIBERO98.3%、C2表格矛盾及公开配置的复现差异。",
+    "authors": "Yunfan Lou, Xiaowei Chi, Xiaojie Zhang, Zezhong Qian, Chengxuan Li, Rongyu Zhang, Yaoxu Lyu, Guoyu Song, Chuyao Fu, Haoxuan Xu, Pengwei Wang, Shanghang Zhang",
+    "category": "WAM",
+    "tags": [
+      "Semantic Mask",
+      "Predictive Features",
+      "Flow Matching",
+      "Robust Control",
+      "LIBERO"
+    ],
+    "published": "2026-04-21",
+    "added": "2026-09-21",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.19683",
+    "htmlPath": "papers/mwm.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/mwm-architecture.png",
+      "alt": "MWM论文图2：RGB记忆与文本进入未来掩码DiT，逐层特征连接动作专家和动作解码器",
+      "sourceLabel": "论文图2，第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2604.19683v2"
+    }
   }
 ]
