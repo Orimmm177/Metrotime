@@ -728,5 +728,33 @@
       "sourceLabel": "论文图2，第4页",
       "sourceUrl": "https://arxiv.org/pdf/2604.19683v2"
     }
+  },
+  {
+    "id": "pi07",
+    "title": "π₀.₇: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
+    "subtitle": "用语言、质量标签与视觉子目标，把混合经验变成可选择的机器人策略",
+    "summary": "π₀.₇以Gemma3视觉语言主干、MEM历史编码和860M动作专家为核心，通过多模态提示学习混合质量数据；独立BAGEL世界模型生成多视角子目标。报告解析分层异步控制、元数据与数据多样性消融、UR5e跨本体迁移，并标明公开实现和原文统计的复现缺口。",
+    "authors": "Physical Intelligence; Bo Ai, Ali Amin et al.",
+    "category": "WAM",
+    "tags": [
+      "π₀.₇",
+      "VLA",
+      "多模态条件",
+      "视觉子目标",
+      "跨本体迁移"
+    ],
+    "published": "2026-04-16",
+    "added": "2026-09-22",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.15483",
+    "htmlPath": "papers/pi07.html",
+    "featured": false,
+    "demo": false,
+    "previewImage": {
+      "src": "papers/previews/pi07-architecture.png",
+      "alt": "π₀.₇论文图2：VLA动作专家、高层语言策略与BAGEL子目标世界模型的连接",
+      "sourceLabel": "论文图 2 · 第 4 页",
+      "sourceUrl": "https://arxiv.org/abs/2604.15483"
+    }
   }
 ]
