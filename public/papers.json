@@ -756,5 +756,32 @@
       "sourceLabel": "论文图 2 · 第 4 页",
       "sourceUrl": "https://arxiv.org/abs/2604.15483"
     }
+  },
+  {
+    "id": "vag",
+    "title": "VAG: Dual-Stream Video-Action Generation for Embodied Data Synthesis",
+    "subtitle": "让视频与动作一起去噪：低成本全局条件能带来怎样的数据价值",
+    "summary": "VAG用Cosmos视频DiT逐步预测的干净latent，经3D平均池化指导动作U-Net同步生成。报告区分离线阈值SR、LIBERO回放62%与下游真机7/20到11/20，解析detach、16到132维接口缺口及合成预训练的预算混杂。",
+    "authors": "Xiaolei Lang, Yang Wang, Yukun Zhou, Chaojun Ni, Kerui Li, Jiagang Zhu, Tianze Liu, Jiajun Lv, Xingxing Zuo, Yun Ye, Guan Huang, Xiaofeng Wang, Zheng Zhu",
+    "category": "WAM",
+    "tags": [
+      "具身数据合成",
+      "双流生成",
+      "全局池化",
+      "Flow Matching"
+    ],
+    "published": "2026-04-10",
+    "added": "2026-09-23",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2604.09330",
+    "htmlPath": "papers/vag.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/vag-architecture.png",
+      "alt": "VAG论文图3：视频DiT经3D池化指导动作U-Net，以及训练时的detach与两条损失",
+      "sourceLabel": "论文图3 · 第4页",
+      "sourceUrl": "https://arxiv.org/pdf/2604.09330v1#page=4"
+    }
   }
 ]
