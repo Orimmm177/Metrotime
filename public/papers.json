@@ -810,5 +810,32 @@
       "sourceLabel": "论文v2图3 · 第4页",
       "sourceUrl": "https://arxiv.org/pdf/2604.04502v2#page=4"
     }
+  },
+  {
+    "id": "s-vam",
+    "title": "S-VAM: Shortcut Video-Action Model by Self-Distilling Geometric and Semantic Foresight",
+    "subtitle": "把多步视频的几何与语义先验，蒸馏为单步可用的动作条件",
+    "summary": "S-VAM用两个时空解耦器，把SVD首步隐藏特征映射为自生成视频的DA3几何和DINOv2语义目标；Uni-Perceiver保留原始特征旁路并压缩条件，再由扩散策略输出动作块。报告解析同轨迹教师、参考条件、三阶段训练、25Hz分块吞吐，以及论文和官方代码的接口差异。",
+    "authors": "Haodong Yan, Zhide Zhong, Jiaguan Zhu, Junjie He, Weilin Yuan, Wenxuan Song, Xin Gong, Yingjie Cai, Guanyi Zhao, Xu Yan, Bingbing Liu, Ying-Cong Chen, Haoang Li",
+    "category": "WAM",
+    "tags": [
+      "隐式未来表示",
+      "自蒸馏",
+      "几何语义解耦",
+      "分块动作"
+    ],
+    "published": "2026-03-17",
+    "added": "2026-09-24",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2603.16195",
+    "htmlPath": "papers/s-vam.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/s-vam-architecture.png",
+      "alt": "S-VAM图2：SVD单步特征、几何与语义解耦器、原始特征旁路、Uni-Perceiver及动作扩散策略",
+      "sourceLabel": "论文v2图2 · 第5页",
+      "sourceUrl": "https://arxiv.org/pdf/2603.16195v2#page=5"
+    }
   }
 ]
