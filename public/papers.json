@@ -837,5 +837,32 @@
       "sourceLabel": "论文v2图2 · 第5页",
       "sourceUrl": "https://arxiv.org/pdf/2603.16195v2#page=5"
     }
+  },
+  {
+    "id": "omnivta",
+    "title": "OmniVTA: Visuo-Tactile World Modeling for Contact-Rich Robotic Manipulation",
+    "subtitle": "以未来触觉规划动作，用 60 Hz 残差反馈修正接触",
+    "summary": "OmniVTA以TactileVAE压缩局部形变，双流世界模型预测未来接触，LTD与接触门控为动作扩散提供条件，再由60Hz残差控制器修正执行。报告解释慢快时钟、预测与反馈接口、OmniViTac数据和四阶段训练，逐项核对实验及公开代码缺口。",
+    "authors": "Yuhang Zheng, Songen Gu, Yupeng Zheng, Weize Li, Yujie Zang, Shuai Tian, Xiang Li, Ce Hao, Chen Gao, Si Liu, Haoran Li, Yilun Chen, Shuicheng Yan, Wenchao Ding",
+    "category": "WAM",
+    "tags": [
+      "触觉世界模型",
+      "慢快控制",
+      "接触门控",
+      "残差反馈"
+    ],
+    "published": "2026-03-02",
+    "added": "2026-09-26",
+    "source": "arXiv / 官方项目首发",
+    "sourceUrl": "https://arxiv.org/abs/2603.19201",
+    "htmlPath": "papers/omnivta.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/omnivta-architecture.png",
+      "alt": "OmniVTA论文图5：世界模型与融合策略构成4Hz慢系统，60Hz RLTC用预测和实测触觉修正动作",
+      "sourceLabel": "论文v3图5 · 第8页",
+      "sourceUrl": "https://arxiv.org/pdf/2603.19201v3#page=8"
+    }
   }
 ]
