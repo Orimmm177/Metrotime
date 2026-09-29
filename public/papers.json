@@ -864,5 +864,33 @@
       "sourceLabel": "论文v3图5 · 第8页",
       "sourceUrl": "https://arxiv.org/pdf/2603.19201v3#page=8"
     }
+  },
+  {
+    "id": "saydreamact",
+    "title": "Say, Dream, and Act: Learning Video World Models for Instruction-Driven Robot Manipulation",
+    "subtitle": "Dream4manip：以想象轨迹引导动作，用真实观测持续纠偏",
+    "summary": "Dream4manip（SayDreamAct）适配并对抗蒸馏 Cosmos-Predict2，以固定关键帧表示可变长任务，再将生成视频与真实历史送入上下文动作模型。报告解释训练与闭环接口，核对原文93帧、LIBERO表格98.1%及秒级视频耗时，并明确官方实现、动作语义与真机定量证据的缺口。",
+    "authors": "Songen Gu, Yunuo Cai, Tianyu Wang, Simo Wu, Yanwei Fu",
+    "category": "WAM",
+    "tags": [
+      "级联世界模型",
+      "视频规划",
+      "对抗蒸馏",
+      "闭环动作",
+      "Dream4manip"
+    ],
+    "published": "2026-02-11",
+    "added": "2026-09-29",
+    "source": "arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2602.10717",
+    "htmlPath": "papers/saydreamact.html",
+    "demo": false,
+    "featured": false,
+    "previewImage": {
+      "src": "papers/previews/saydreamact-architecture.png",
+      "alt": "Dream4manip论文图1：视频生成器与冻结DiT判别主干进行对抗蒸馏，生成未来和真实观测共同驱动动作闭环",
+      "sourceLabel": "论文图1 · 第3页",
+      "sourceUrl": "https://arxiv.org/pdf/2602.10717v1#page=3"
+    }
   }
 ]
